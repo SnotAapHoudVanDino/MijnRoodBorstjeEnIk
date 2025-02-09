@@ -5,21 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Onze Liefdevolle Herinneringen ❤️</title>
     <link rel="stylesheet" href="styles.css">
+    
+    <!-- Voeg Firebase SDK's toe -->
+    <script src="https://www.gstatic.com/firebasejs/9.1.3/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.1.3/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.1.3/firebase-storage.js"></script>
+
+    <!-- Voeg je script.js toe voor functionaliteit -->
     <script defer src="script.js"></script>
 </head>
 <body>
+    <!-- Login pagina -->
     <div id="login">
         <h1>Welkom bij onze herinneringen ❤️</h1>
         <p>Voer de geheime code in om toegang te krijgen:</p>
         <input type="password" id="accessCode" placeholder="Voer code in...">
         <button onclick="checkCode()">Toegang</button>
     </div>
+
+    <!-- Hoofdinhoud na toegang -->
     <div id="mainContent" style="display: none;">
         <h1>Onze Liefdevolle Herinneringen ❤️</h1>
         <nav>
             <button onclick="toonFotosVideos()">📸 Foto’s en Video’s</button>
             <button onclick="toonDagboek()">📖 Dagboek</button>
         </nav>
+
+        <!-- Voeg knoppen toe voor het uploaden van foto’s -->
+        <button onclick="uploadFoto('Zomervakanties', 'Zomer 2023')">Upload Foto's Zomer 2023</button>
+        <button onclick="uploadFoto('Kerstvakanties', 'Kerst 2023')">Upload Foto's Kerst 2023</button>
+        <button onclick="uploadFoto('Op reis', 'Weekend Parijs')">Upload Foto's Weekend Parijs</button>
+        
+        <!-- Knop voor dagboek -->
+        <button onclick="opslaanDagboek()">Opslaan Dagboek</button>
+
         <div id="content"></div>
     </div>
 </body>
