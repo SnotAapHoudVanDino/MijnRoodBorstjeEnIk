@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Onze Liefdevolle Herinneringen ❤️</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <div id="login">
+        <h1>Welkom bij onze herinneringen ❤️</h1>
+        <p>Voer de geheime code in om toegang te krijgen:</p>
+        <input type="password" id="accessCode" placeholder="Voer code in...">
+        <button onclick="checkCode()">Toegang</button>
+    </div>
+    <div id="mainContent" style="display: none;">
+        <h1>Onze Liefdevolle Herinneringen ❤️</h1>
+        <nav>
+            <button onclick="toonFotosVideos()">📸 Foto’s en Video’s</button>
+            <button onclick="toonDagboek()">📖 Dagboek</button>
+        </nav>
+        <div id="content"></div>
+    </div>
+</body>
+</html>
