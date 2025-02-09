@@ -240,3 +240,42 @@ function laadDagboek() {
     alert("Er is een fout opgetreden bij het ophalen van berichten.");
   });
 }
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+
+// Your web app's Firebase configuration
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+const firebaseConfig = {
+  apiKey: "AIzaSyAmBFtPf11eu4tohfj17CMkG8FbsVl93O8",
+  authDomain: "mijnroodborststje.firebaseapp.com",
+  projectId: "mijnroodborststje",
+  storageBucket: "mijnroodborststje.firebasestorage.app",
+  messagingSenderId: "99812857188",
+  appId: "1:99812857188:web:f7b3dd2662dd70bca59671",
+  measurementId: "G-V1HHCF8Y93"
+};
+
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+
+// Your web app's Firebase configuration
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+const firebaseConfig = {
+  apiKey: "AIzaSyAmBFtPf11eu4tohfj17CMkG8FbsVl93O8",
+  authDomain: "mijnroodborststje.firebaseapp.com",
+  projectId: "mijnroodborststje",
+  storageBucket: "mijnroodborststje.firebasestorage.app",
+  messagingSenderId: "99812857188",
+  appId: "1:99812857188:web:f7b3dd2662dd70bca59671",
+  measurementId: "G-V1HHCF8Y93"
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+const analytics = getAnalytics(app);
